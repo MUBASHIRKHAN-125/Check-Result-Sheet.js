@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT CHECK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head">
+        <h1>RESULT SHEET</h1>
+    </div>
+    <div class="maincontainer">
+        <div class="container">
+    <div class="inp">
+    <label for="phy1">
+        Total Number Of Physics:<input type="number" name="check" id="phy1">
+    </label>
+    <br>
+    <br>
+    <label for="phy2">
+        Obtained Number Of Physics:<input type="number" name="check" id="phy2">
+    </label>
+    <br>
+    <br>
+    <label for="chem1">
+        Total Number Of Chemistry:<input type="number" name="check" id="chem1">
+    </label>
+    <br>
+    <br>
+    <label for="chem2">
+        Obtained Number Of Chemistry:<input type="number" name="check" id="chem2">
+    </label>
+    <br>
+    <br>
+    <label for="math1">
+        Total Number Of Math:<input type="number" name="check" id="math1">
+    </label>
+    <br>
+    <br>
+    <label for="math2">
+        Obtained Number Of Math:<input type="number" name="check" id="math2">
+    </label>
+</div>
+    <br>
+    <br>
+    <div class="but">
+    <button onclick="check1()">Check Result</button>
+</div>
+    <!-- <button onclick="check2()">Check Result</button> -->
+    <!-- <button onclick="check3()">Check Result</button> -->
+     <br>
+     <br>
+     
+    <div id="card">
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Max</th>
+                <th>Secured</th>
+                <th>%</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>Physics:</td>
+                <td id="phytotal"></td>
+                <td id="phyobtain"></td>
+                <td id="per1"></td>
+                <td id="Remarks1"></td>
+            </tr>
+            <tr>
+                <td>Chemistry:</td>
+                <td id="chytotal"></td>
+                <td id="chyobtain"></td> 
+                <td id="per2"></td>
+                <td id="Remarks2"></td>
+            </tr> 
+            <tr>
+                <td>Math:</td>
+                <td id="mattotal"></td>
+                <td id="matobtain"></td> 
+                <td id="per3"></td>
+                <td id="Remarks3"></td>
+            </tr> 
+            <tr>
+                <th>Total:</th>
+                <th>Max <br>Marks</th>
+                <th>Secured Marks <br>In Passed Papers</th> 
+                <th>Passed <br> Papers %</th>
+                <th>Grade</th>
+            </tr> 
+            <tr>
+                <th>In words</th>
+                <td id="totalmark"></td>
+                <td id="totalsecured"></td> 
+                <td id="totalpercentage"></td>
+                <td id="totalgrade"></td>
+            </tr> 
+        </table>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
