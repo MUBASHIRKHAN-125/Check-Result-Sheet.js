@@ -16,7 +16,7 @@ function check1(){
     document.getElementById("per3").innerText = (math2/math1)* 100;
     document.getElementById("totalmark").innerText = phy1 + chem1 + math1;
     document.getElementById("totalsecured").innerText = phy2 + chem2 + math2;
-    document.getElementById("totalpercentage").innerText = (phy2/phy1)* 100 + (chem2/chem1)* 100 + (math2/math1)* 100;
+    document.getElementById("totalpercentage").innerText = (phy2 + chem2 + math2) / (phy1 + chem1 + math1) * 100;
     }
     let percentage = 80;
 if(percentage>=80){
