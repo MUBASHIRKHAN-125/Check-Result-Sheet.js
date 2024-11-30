@@ -8,10 +8,11 @@
 </head>
 <body>
     <div class="head">
-        <h1>RESULT SHEET</h1>
+        <h1>RESULT SHEET:</h1>
     </div>
     <div class="maincontainer">
         <div class="container">
+            <div class="maininp">
     <div class="inp">
     <label for="phy1">
         Total Number Of Physics:<input type="number" name="check" id="phy1">
@@ -47,8 +48,7 @@
     <div class="but">
     <button onclick="check1()">Check Result</button>
 </div>
-    <!-- <button onclick="check2()">Check Result</button> -->
-    <!-- <button onclick="check3()">Check Result</button> -->
+</div>
      <br>
      <br>
      
@@ -62,25 +62,25 @@
                 <th>Remarks</th>
             </tr>
             <tr>
-                <td>Physics:</td>
+                <th>Physics:</th>
                 <td id="phytotal"></td>
-                <td id="phyobtain"></td>
-                <td id="per1"></td>
-                <td id="Remarks1"></td>
+                <td id="phyobtained"></td>
+                <td id="Phyper"></td>
+                <td id="Physicsgrade"></td>
             </tr>
             <tr>
-                <td>Chemistry:</td>
+                <th>Chemistry:</th>
                 <td id="chytotal"></td>
                 <td id="chyobtain"></td> 
-                <td id="per2"></td>
-                <td id="Remarks2"></td>
+                <td id="chemper"></td>
+                <td id="chemgrade"></td>
             </tr> 
             <tr>
-                <td>Math:</td>
+                <th>Math:</th>
                 <td id="mattotal"></td>
-                <td id="matobtain"></td> 
-                <td id="per3"></td>
-                <td id="Remarks3"></td>
+                <td id="matobtained"></td> 
+                <td id="mathper"></td>
+                <td id="mathgrade"></td>
             </tr> 
             <tr>
                 <th>Total:</th>
@@ -90,10 +90,10 @@
                 <th>Grade</th>
             </tr> 
             <tr>
-                <th>In words</th>
-                <td id="totalmark"></td>
-                <td id="totalsecured"></td> 
-                <td id="totalpercentage"></td>
+                <th>In Words</th>
+                <td id="totalallmark"></td>
+                <td id="totalallsecured"></td> 
+                <td id="totalallpercentage"></td>
                 <td id="totalgrade"></td>
             </tr> 
         </table>
