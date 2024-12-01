@@ -61,8 +61,9 @@ function check1(){
 }
   else{
         document.getElementById("totalgrade").innerText = "FAIL"
+}                                                                                                                                         
 }
-}
 
 
 
+                                                                               
