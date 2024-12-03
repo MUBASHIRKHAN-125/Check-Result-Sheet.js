@@ -26,7 +26,7 @@ function check1(){
     let mathTotal = Number(document.getElementById("math1").value);
     let mathObtained = Number(document.getElementById("math2").value);
     let mathNumberOfPercentage =  (mathObtained / mathTotal) * 100;
-    document.getElementById("mattotal").innerText = mathTotal;
+   document.getElementById("mattotal").innerText = mathTotal;
     document.getElementById("matobtained").innerText = mathObtained;
     document.getElementById("mathper").innerText = mathNumberOfPercentage + "%";
    if (mathNumberOfPercentage>=33){
