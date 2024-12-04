@@ -47,6 +47,13 @@ width: 200px;
 .container{
     border:10px solid peru;
     padding-top: 40px;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+    transition-duration: 0.3s;
+}
+.container:hover{
+    background-color: #673ab721;
 }
 .head{
     color: rgb(41 163 11);
