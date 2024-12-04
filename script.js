@@ -13,7 +13,7 @@ function check1(){
    }
     let chemTotal = Number(document.getElementById("chem1").value);
     let chemObtained = Number(document.getElementById("chem2").value);
-    let chemistryNumberOfPercentage =  (chemObtained / chemTotal) * 100;
+    let chemistryNumberOfPercentage =  (chemObtained / chemTotal) * 100 ;
     document.getElementById("chytotal").innerText = chemTotal;
     document.getElementById("chyobtain").innerText = chemObtained;
     document.getElementById("chemper").innerText = chemistryNumberOfPercentage + "%";
@@ -40,7 +40,7 @@ function check1(){
    let totalPercentageOfAllSubject =  (obtainedNumberOfAllSubject / totalNumberOfAllSubject) * 100;
    document.getElementById("totalallmark").innerText =  totalNumberOfAllSubject;
    document.getElementById("totalallsecured").innerText = obtainedNumberOfAllSubject;
-   document.getElementById("totalallpercentage").innerText = totalPercentageOfAllSubject + "%";
+   document.getElementById("totalallpercentage").innerText = totalPercentageOfAllSubject + "%" ;
    if(totalPercentageOfAllSubject>=80){
         document.getElementById("totalgrade").innerText = "A+";
 }
@@ -61,7 +61,10 @@ function check1(){
 }
   else{
         document.getElementById("totalgrade").innerText = "FAIL"
-}                                                                                                                                         
+} 
+if(physicsNumberOfPercentage <33 || chemistryNumberOfPercentage <33 || mathNumberOfPercentage <33){
+        document.getElementById("totalgrade").innerText = "FAIL";
+ }                                                                                                                                        
 }
 
 
